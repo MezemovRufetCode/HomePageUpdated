@@ -253,7 +253,7 @@ header .container .row .menu .menu-links ul li a {
   margin: 0 auto;
 }
 
-#entrance .main img {
+#entrance .main .sliders img {
   height: 65vh;
   width: 100%;
   -o-object-fit: cover;
@@ -843,6 +843,29 @@ footer .bottom-footer .socials a:hover {
   #blogposts .Subscribe .container .row .blog .img {
     width: 304px;
   }
+  #entrance .content {
+    top: 15%;
+    left: 12%;
+    max-height: 100%;
+  }
+  #entrance .content .heading {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+  }
+  #entrance .content .heading span {
+    color: red;
+  }
+  #entrance .content .info {
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+  }
+  #entrance .content .img {
+    top: 10px;
+    width: 197px;
+    height: 56px;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -897,6 +920,25 @@ footer .bottom-footer .socials a:hover {
   #reviews .owl-next {
     display: none;
   }
+  #entrance .content {
+    top: 10%;
+    left: 12%;
+    max-height: 100%;
+  }
+  #entrance .content .heading {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+  #entrance .content .info {
+    padding-top: 20px;
+    font-size: 17px;
+  }
+  #entrance .content .img {
+    top: 10px;
+    width: 160px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -937,6 +979,27 @@ footer .bottom-footer .socials a:hover {
 @media screen and (max-width: 500px) {
   #valentine .container .row .movie iframe {
     height: 250px;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  #entrance .content {
+    top: 10%;
+    left: 12%;
+    max-height: 100%;
+  }
+  #entrance .content .heading {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+  #entrance .content .info {
+    display: none;
+  }
+  #entrance .content .img {
+    top: 10px;
+    width: 160px;
+    height: 40px;
   }
 }
 
