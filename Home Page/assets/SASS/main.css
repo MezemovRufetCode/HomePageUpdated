@@ -64,6 +64,26 @@ header .container .row .nav-links {
           align-items: center;
 }
 
+header .container .row .nav-links a {
+  position: relative;
+}
+
+header .container .row .nav-links a:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .container .row .nav-links a:hover:after {
+  width: 100%;
+}
+
 header .container .row .nav-links .Menu ul {
   list-style: none;
   margin: 0px;
@@ -954,6 +974,26 @@ footer {
   padding-top: 90px;
   padding-bottom: 20px;
   background-color: #fefaf3;
+}
+
+footer a {
+  position: relative;
+}
+
+footer a:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer a:hover:after {
+  width: 100%;
 }
 
 footer h5 {
