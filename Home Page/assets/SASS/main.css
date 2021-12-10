@@ -9,16 +9,14 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  height: 100vh;
-}
-
 header {
   background-color: #fff;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 10000;
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -390,8 +388,21 @@ header .container .row .menu .menu-links ul li a {
   padding-top: 25px;
 }
 
-#products .products .posts-collect .all .post-img img {
+#products .products .posts-collect .all .post-img figure {
+  overflow: hidden;
+}
+
+#products .products .posts-collect .all .post-img figure img {
   width: 100%;
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#products .products .posts-collect .all .post-img figure img:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
 }
 
 #products .products .posts-collect .all .name {
